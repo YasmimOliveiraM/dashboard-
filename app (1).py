@@ -26,7 +26,7 @@ with col1:
     df_cleaned = df.dropna(subset=['lat', 'lon'])
 
     center_lat, center_lon = -22.9068, -43.1729
-    m = folium.Map(location=[center_lat, center_lon], zoom_start=11, control_scale=True, width='85%', height=600, use_container_width=True)
+    m = folium.Map(location=[center_lat, center_lon], zoom_start=11, control_scale=True, width='90%', height=600, use_container_width=True)
 
     heat_data = [[row['lat'], row['lon']] for index, row in df_cleaned.iterrows()]
 
